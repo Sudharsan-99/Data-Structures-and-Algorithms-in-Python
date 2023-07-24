@@ -1,0 +1,39 @@
+print("Array is container which can hold a fixed items of same data type")
+print("\n")
+print("Basic Operation of the Array are :-")
+print("1.TRAVERSE \t 2.INSERTION \t 3.DELETION \t 4.SEARCHING \t 5.UPDATE")
+print("\n")
+#DECLARATION OF ARRAY
+from array import*
+sonu=array('i',[10,20,30,40,50])
+print("DISPLAYING THE ARRAY ELEMENTS")
+for i in sonu:
+    print(i)
+print("\n")
+print("ACESSING ARRAY ELEMENT")
+print("The First Element of the Array is =",sonu[0])
+print("The second Element of the Array is =",sonu[1])
+print("The Third Element of the Array is =",sonu[2])
+print("The Fourth Element of the Array is =",sonu[3])
+print("The Fifth Element of the Array is =",sonu[4])
+print("\n")
+print("INSERTING A ELEMENT TO THE ARRAY A GIVEN INDEX")
+sonu.insert(1,60)
+print("The Element 60 will be Inserted at the index 1")
+for i in sonu:
+    print(i)
+print("\n")
+print("DELETION OF A ELEMENT")
+print("The Element 60 will be Deleted at the index 1")
+sonu.remove(60)
+for i in sonu:
+    print(i)
+print("\n")
+print("SEARCHING A ELEMENT IN THE ARRAY")
+print("The Element 20 is searched in the Array,and the index(the location were the element is presnt)is =",sonu.index(20))
+print("\n")
+print("UPDATING A ELEMENT IN A ARRAY")
+print("The element 20 is updated as 60")
+sonu[1]=60
+for i in sonu:
+    print(i)
